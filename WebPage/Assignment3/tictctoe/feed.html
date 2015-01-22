@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form </title>
+    <link rel="stylesheet" href="css/style2.css"/>
+    <script type ="text/javascript">
+        function validateForm(){
+          var x = document.getElementById('email').value;
+          var atpos = x.indexOf("@");
+          var dotpos = x.lastIndexOf(".");
+            if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+                alert("Not a valid e-mail address!");
+                return false;
+            } else if (document.getElementById('uname').value == "" || document.getElementById('name').value == "" || document.getElementById('password').value == "" || document.getElementById('cpassword').value == "")
+                {
+                alert ("Please fill in appropriate fields before submitting form!");
+                return false;
+            } else {
+            return true;
+            }
+        }
+    </script>
+</head>
+<body>
+<a href="http://joewoodcox.altervista.org/Assignment3/tictctoe/index.html">back to homepage</a>
+<div class="container">
+<div class="main">
+<form class="form" method="post" action="#">
+<h2>Register for Tic Tac Toe</h2>
+<label>Name :</label>
+<input type="text" name="dname" id="name">
+<label>User Name :</label>
+<input type="text" name="dname1" id="uname">
+<label>Email :</label>
+<input type="text" name="demail" id="email">
+<label>Password :</label>
+<input type="password" name="password" id="password">
+<label>Confirm Password :</label>
+<input type="password" name="cpassword" id="cpassword">
+<input type="button" name="register" id="register" value="Register" onclick= "validateForm()">
+</form>
+</div>
+</div>
+</body>
+</html>
