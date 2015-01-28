@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+
+<script type = "text/javascript" src="js/jquery.validate.min.js"></script>
+
+<script>
+    
+</script>
+<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://woodman502.github.io/Assignment4/index.html">Assignment 4</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="http://woodman502.github.io/index.html">Home</a></li>
+            <li><a href="http://woodman502.github.io/Assignment4/index.html/about.html">About</a></li>
+            <li><a href="http://woodman502.github.io/Assignment4/index.html/contact.html">Contact Us</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+</br></br></br>
+<h1>Contact Us</h1>
+    <form>
+
+    <!-- Name-->
+    <div class="form-group">
+      <label class="form-label" for="name">Name:</label>
+      <div class="form">
+        <div class="input-prepend">
+          <span class="glyphicon glyphicon-user"></span>
+          <input id="name" name="name" class="input-large" placeholder="Enter name here" type="text" required="">
+          <em>*</em>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Email-->
+    <div class="form-group">
+      <label class="form-label" for="email">Email:</label>
+      <div class="form">
+        <div class="input-prepend">
+          <span class="glyphicon glyphicon-envelope"></span>
+          <input id="email" name="email" class="input-large" placeholder="Example: myemail@domain.com" type="text" required="">
+          <em>*</em>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- URL-->
+    <div class="form-group">
+      <label class="form-label" for="url">Url:</label>
+      <div class="form">
+        <div class="input-prepend">
+          <span class="glyphicon glyphicon-globe"></span>
+          <input id="url" name="url" class="input-large" placeholder="Example : www.hello.com" type="text" required="">
+          <em>*</em>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Textarea -->
+    <div class="form-group">
+      <label class="form-label" for="textarea">Comment:</label>
+      <div class="form">                     
+        <textarea id="textarea" cols = 100 rows = 5 name="textarea">Comment here (no more than 250 characters)</textarea>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary">Save changes</button>
+      <button type="button" class="btn">Cancel</button>
+    </div>
+    </form>
+</body>
+</html>
