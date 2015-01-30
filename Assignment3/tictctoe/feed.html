@@ -3,22 +3,10 @@
 <head>
     <title>Feedback Form </title>
     <link rel="stylesheet" href="css/style2.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type = "text/javascript" src="js/jquery.validate.min.js"></script>
 </head>
-<script type ="text/javascript">
-function validateForm() {
-    var x = document.forms["myForm"]["demail"].value;
-    var atpos = x.indexOf("@");
-    var dotpos = x.lastIndexOf(".");
-    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
-        alert("Not a valid e-mail address!");
-        return false;
-    }
-    if(document.forms["myForm"]["comments"].value=="" || document.forms["myForm"]["comments"].value==null){
-        alert("Must leave a comment!!");
-        return false;
-    }
-}
-</script>
+
 <body>
 <a href="http://woodman502.github.io/Assignment3/tictctoe/index.html">back to homepage</a>
 <div class="container">
@@ -26,12 +14,12 @@ function validateForm() {
 <form class="form" name="myForm">
 <h2>Feedback</h2>
 <label>Name :</label>
-<input type="text" name="dname" id="name">
+<input type="text" name="dname" id="name"required =""><em>*</em>
 <label>Email :</label>
-<input type="text" name="demail" id="email">
+<input type="text" name="demail" id="email" required=""><em>*</em>
 <label>Comment:</label><br>
-<textarea name="comments" rows="15"></textarea>
-<input type="submit" name="submit" id="submit" value="Submit" onclick="validateForm()">
+<textarea name="comments" rows="15" required =""></textarea><em>*</em>
+<input type="submit" name="submit" id="submit" value="Submit">
 </form>
 </div>
 </div>
